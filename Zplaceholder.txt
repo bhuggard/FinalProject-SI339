@@ -12,3 +12,14 @@ Use this space to mess with code snippets/new style techniques
     </div>
   </div>
 </div>
+
+PARALLAX IMAGE SHIT
+header{
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  color: white;
+  height: 400px; /* Parallax effect */
+  /* background-image: url(../imgs/**IMAGE GOES HERE**); */
+  background-repeat: no-repeat;
+}

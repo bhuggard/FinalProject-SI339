@@ -1,15 +1,42 @@
-dd img{
-    width: 70px;
-    height: 70px;
-    padding: 2px;
+body{
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 5;
 }
 
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+
+
+a{
+  color: #FFCB05;
+}
+
+a:visited {
+  color: #FFCB05;
+}
+
+nav{
+  background-color: #00274C;
+  padding: 25px 0;
+  color: #FFCB05;    
+  text-align: right;   
+}
+
+dl dt .hide{
+  display: none;
+}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
     width: 300px;
     height: 200px;
-    border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -23,7 +50,7 @@ dd img{
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Do a horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
@@ -39,13 +66,27 @@ dd img{
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
-    color: black;
+    background-color: #00274C;
+    color: #FFCB05;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: #00274C;
+    color: #FFCB05;
     transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+
+  footer{
+      background-color: #00274C;
+      color: #FFCB05;
+      padding-top: 30px;
+      text-align: center;
+      grid-row: 4;
   }
