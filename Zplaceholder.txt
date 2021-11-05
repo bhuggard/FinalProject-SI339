@@ -13,7 +13,7 @@ Use this space to mess with code snippets/new style techniques
   </div>
 </div>
 
-PARALLAX IMAGE SHIT
+PARALLAX IMAGE STUFF
 header{
   background-attachment: fixed; /* Parallax effect */
   background-position: center; /* Parallax effect */
