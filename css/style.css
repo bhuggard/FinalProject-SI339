@@ -262,20 +262,32 @@ body .intro{
   margin-top: 15px;
 }
 
-.container .gallery{
-  height: 200px;
-  width: 200px;
+.container{
   display: flex;
   flex-direction: row;
-
-
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+.container .gallery {
+}
+.container .gallery img{
+  border:3px solid #FFCB05;
+  margin: 1%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
 }
 
-.container .gallery:active{
+.container .gallery img:active{
+  object-fit: cover;
   position:relative;
   margin: auto;
-  width:35%;
-  height:45%;
+  width:600px;
+  height:600px;
   display:block;
   z-index:999;
 }
