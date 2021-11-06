@@ -1,16 +1,92 @@
 body{
-  background-color: rgb(230, 207, 178);
+  background-color: rgb(173, 172, 172);
   font-family: 'Open Sans', sans-serif;
+
+}
+/* PORTFOLIO SPECIFIC STYLING */
+
+.projects ul{
+  list-style-type: none;
+  text-align: center;
+  margin: auto;
+}
+.business ul{
+  list-style-type: none;
+  text-align: center;
+  margin: auto;
+}
+.holder-portfolio{
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr 5fr 1fr; 
+}
+
+.preprobus{
+  margin-top: 3%;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  color: #00274C;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.holder-portfolio .projects{
+  color: #00274C;
+  font-size: 20px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  line-height: 2;
+}
+
+.holder-portfolio .business{
+  color: #00274C;
+  font-size: 20px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  line-height: 2;
+}
+
+.holder-portfolio .projects .protitle{
+  font-size: 30px;
+  grid-row: 1/2;
+}
+
+.holder-portfolio .business .bustitle{
+  font-size: 30px;
+  grid-row: 3/4;
+}
+
+/* ABOUT ME SPECIFIC STYLING */
+.accs{
+  text-align: center;
+  margin: auto;
+}
+
+.xplane .indycards .flip-card{
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 a:visited{
   text-decoration: none;
 }
+
 .first{
   margin: 10px;
   color:#00274C;
   text-align:center;
-  font-size: 19px;
+  font-size: 20px;
+  line-height: 1.25;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
 .second{
@@ -19,7 +95,9 @@ a:visited{
   color: #00274C;
   text-align: center;
   font-size: 25px;
+
 }
+
 
 header h1{
   display: flex;
@@ -27,19 +105,31 @@ header h1{
   justify-content: center;
   background-attachment: fixed; /* Parallax effect */
   background-position: center; /* Parallax effect */
-  /* background-size: cover; Parallax effect */
-  color: white;
-  height: 400px; /* Parallax effect */
+  background-size: cover;
+  height: 300px; /* Parallax effect */
   background-image: url(../imgs/try.jpg);
   background-repeat: no-repeat;
 }
 
+header h1 .projectstitle{
+  color:#FFCB05;
+  margin: auto;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
 header h2{
   font-family: 'Alegreya Sans SC', sans-serif;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  text-align: center;
   font-size: 30px;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -94,6 +184,45 @@ main .holder-index{
   grid-template-columns: 1;
   grid-template-rows: 8;
 }
+
+body h2.ncw{
+  text-align:center;
+  margin: auto;
+  margin-top: 5%;
+  color: #00274C;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 40px;
+}
+
+body h2.funcontent{
+  text-align:center;
+  margin-top: 4%;
+  margin: auto;
+  color: #00274C;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 40px;
+}
+
+header h1 .coursestitle{
+  color:#FFCB05;
+  margin: auto;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
+
+body dl .classimg .flip-card{
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 /* The flip card container*/
 .flip-card {
     background-color: transparent;
@@ -104,8 +233,59 @@ main .holder-index{
     display: flex;
     margin: 15px;
     border: solid #FFCB05 2px;
+    background-color: #FFCB05;
   }
+
+  #resume{
+    display: block;
+    height: 300px;
+    width: 300px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15%;
+  }
+  #resume:active {
+    position:relative;
+    margin: auto;
+    width:35%;
+    height:45%;
+    display:block;
+    z-index:999;
+}
   
+body .intro{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  color: #00274C;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.container .gallery{
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.container .gallery:active{
+  position:relative;
+  margin: auto;
+  width:35%;
+  height:45%;
+  display:block;
+  z-index:999;
+}
+header h1 .funtitle{
+  color:#FFCB05;
+  margin: auto;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
   /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
